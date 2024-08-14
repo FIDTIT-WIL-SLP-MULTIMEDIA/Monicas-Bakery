@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monica's Bakery</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Belleza&family=Argent:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img src="SVG/Monica's Bakery Logo.svg" alt="Logo"></a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Welcome to Monica's Bakery</h1>
+                <h3>Delicious, Fresh, and Homemade Baked Goods</h3>
+                <p>At Monica's Bakery, we pride ourselves on crafting delightful baked treats with the finest ingredients
+                    and a touch of love. From butter biscuits to banana bread, every bite is a taste of home.</p>
+                <a class="button" href="https://wa.me/+27783706201" target="_blank">Order Now</a>
+            </div>
+        </section>
+
+		<section id="products" class="products">
+			<h2 class="section__title">Our Best Sellers</h2>
+			<div class="products__gallery">
+				<div class="gallery__item">
+					<img src="Butter Biscuits-MonicasBakery.jpg" alt="Butter Biscuits" class="gallery__image">
+					<div class="gallery__info">
+						<h3 class="product__name">Butter Biscuits</h3>
+						<p class="product__description">Crispy, buttery, and perfect for any occasion. Available in various sizes.</p>
+						<ul class="product__variations">
+							<li class="variation">Tray: R250.00</li>
+							<li class="variation">5L: R300.00</li>
+							<li class="variation">10L: R600.00</li>
+							<li class="variation">20L: R900.00</li>
+						</ul>
+						<p class="product__price">Courier Nationwide – Lasts up to 30 days!</p>
+					</div>
+				</div>
+				<div class="gallery__item">
+					<img src="Scones - Monicas Bakery.jpg" alt="Fluffy Scones / Muffins" class="gallery__image">
+					<div class="gallery__info">
+						<h3 class="product__name">Fluffy Scones / Muffins</h3>
+						<p class="product__description">Soft and fluffy, ideal for breakfast or tea time. Available in various sizes.</p>
+						<ul class="product__variations">
+							<li class="variation">5L: R250.00</li>
+							<li class="variation">10L: R500.00</li>
+							<li class="variation">20L: R1000.00</li>
+						</ul>
+					</div>
+				</div>
+				<div class="gallery__item">
+					<img src="BlueberryBanana.jpg" alt="Banana Bread" class="gallery__image">
+					<div class="gallery__info">
+						<h3 class="product__name">Blueberry Banana Bread</h3>
+						<p class="product__description">Rich and moist banana bread, baked to perfection. Also availble with nuts</p>
+						<p class="product__price">Price: R150.00</p>
+					</div>
+				</div>
+
+			</div>
+            <div class="catering-supply-container">
+                <div class="catering">
+                    <h2 class="section__title">We Cater for any Event (Big or Small)</h2>
+                    <ul class="catering__list">
+                        <li>Funerals</li>
+                        <li>Birthday Parties</li>
+                        <li>Baby Showers</li>
+                        <li>Weddings</li>
+                    </ul>
+                </div>
+                <div class="supply">
+                    <h2 class="section__title">We Can Also Supply</h2>
+                    <ul class="supply__list">
+                        <li>Coffee Shops</li>
+                        <li>Supermarkets</li>
+                        <li>Etc...</li>
+                    </ul>
+                </div>
+            </div>
+            
+		</section>
+		
+
+        <section class="about">
+            <div class="container">
+                <div class="about-text">
+                    <h2>Monica's Bakery</h2>
+                    <h5>Home made with love</h5>
+                    <p>Monica’s Bakery, located in Thulamahashe, Bushbuckridge, South Africa, specializes in crafting
+                        artisanal baked goods that embody the essence of cherished moments. From delectable butter
+                        biscuits to indulgent scones, cupcakes, and more, our bakery promises a delightful array of treats
+                        designed to evoke genuine memories of sweetness. Whether for special occasions or everyday
+                        enjoyment, Monica’s Bakery is dedicated to delivering exceptional quality and creating precious
+                        experiences through our meticulously crafted offerings.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact">
+            <div class="contact-details">
+                <h2>Enquiries</h2>
+            </div>
+            <form class="contact-form" id="contactForm" action="https://formspree.io/f/xeojkkyw" method="POST">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="surname">Surname</label>
+                    <input type="text" id="surname" name="surname" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Your email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+            <div class="contact-buttons">
+                <a href="https://wa.me/+27783706201" class="whatsapp" target="_blank" title="WhatsApp">W</a>
+                <a href="https://www.facebook.com/profile.php?id=100090344259811" class="facebook" target="_blank" title="Facebook">F</a>
+            </div>
+        </section>        
+
+    </main>
+
+    <footer class="footer">
+        <nav class="footer__nav">
+            <ul class="footer__menu">
+                <li class="footer__item"><a href="#hero" class="footer__link">Home</a></li>
+                <li class="footer__item"><a href="#products" class="footer__link">Products</a></li>
+                <li class="footer__item"><a href="#about" class="footer__link">About Us</a></li>
+                <li class="footer__item"><a href="#contact" class="footer__link">Contact</a></li>
+            </ul>
+        </nav>
+        <p class="footer__address">Address: 360B, Maphiti St. Thulamahashe, 1365</p>
+        <p class="footer__phone">Phone: +27793136259 / +27783706201</p>
+        <p class="footer__email">Email: <a href="mailto:monicasbakerry@gmail.com"
+                class="footer__link">monicasbakerry@gmail.com</a></p>
+        <div class="social">
+            <a href="https://www.facebook.com/profile.php?id=100090344259811" target="_blank" class="fa fa-facebook"></a>
+        </div>
+        <p class="footer__copyright">© 2024 Yolo Designs. All rights reserved.</p>
+    </footer>
+
+    
+    <script src="script.js"></script>
+
+</body>
+
+</html>
