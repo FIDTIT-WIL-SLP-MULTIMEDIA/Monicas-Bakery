@@ -16,20 +16,21 @@
 
 <body>
     <header>
-        <nav>
-            <div class="logo">
-                <a href="index.html"><img src="Monica's Bakery Logo.svg" alt="Logo"></a>
-            </div>
-            <div class="menu">
-                <ul>
-                    <li><a href="#hero">Home</a></li>
-                    <li><a href="#products">Products</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-	    <nav id="hamburger-nav">
+    <nav class="desktop-nav">
+        <div class="logo">
+            <a href="index.html"><img src="Monica's Bakery Logo.svg" alt="Logo"></a>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav" class="hamburger-nav">
         <div class="logo">
             <img src="Monica's Bakery Logo.svg" alt="Logo">
         </div>
@@ -40,14 +41,17 @@
                 <span></span>
             </div>
             <div class="menu-links">
-                <li><a href="#home" onclick="toggleMenu()">Home</a></li>
-                <li><a href="#products" onclick="toggleMenu()">Products</a></li>
-                <li><a href="#about" onclick="toggleMenu()">About Us</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                <ul>
+                    <li><a href="#hero" onclick="toggleMenu()">Home</a></li>
+                    <li><a href="#products" onclick="toggleMenu()">Products</a></li>
+                    <li><a href="#about" onclick="toggleMenu()">About Us</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                </ul>
             </div>
         </div>
     </nav>
-    </header>
+</header>
+
 
     <main>
         <section class="hero">
