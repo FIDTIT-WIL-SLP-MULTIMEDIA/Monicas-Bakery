@@ -13,7 +13,8 @@ header {
     position: fixed;
     width: 100%;
     z-index: 100;
-    align-items: center;
+    display: flex;
+    flex-direction: column; /* Allows stacking of navs */
 }
 
 /* Navigation Styles */
@@ -51,6 +52,7 @@ nav {
     text-decoration: none;
     text-transform: uppercase;
     transition: color 0.3s ease;
+    color: white; /* Ensure the link text is white */
 }
 
 .menu ul li a:hover {
@@ -59,7 +61,7 @@ nav {
 
 /* Hamburger menu for mobile view */
 #hamburger-nav {
-    display: none;
+    display: none; /* Hidden by default */
     flex-direction: column;
     background-color: #39312e;
     padding: 10px;
@@ -97,6 +99,14 @@ nav {
     text-align: center;
 }
 
+.menu-links.open {
+    display: flex; /* Show menu when open */
+}
+
+.menu-links ul {
+    padding: 0; /* Reset padding for the ul */
+}
+
 .menu-links li {
     list-style-type: none;
     margin: 10px 0;
@@ -112,6 +122,7 @@ nav {
 .menu-links li a:hover {
     color: #f5bd1f;
 }
+
 
 
 /* Hero section styles */
@@ -600,7 +611,7 @@ footer {
 /* General mobile-specific styles */
 @media (max-width: 768px) {
     /* Hide default menu, show hamburger menu */
-    nav .menu {
+  .desktop-nav {
         display: none; /* Hide normal menu */
     }
 
